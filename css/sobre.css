@@ -1,0 +1,61 @@
+.about-intro { background: var(--white); }
+.about-intro-grid { display: grid; grid-template-columns: .88fr 1.12fr; gap: 76px; align-items: center; }
+.about-photo { position: relative; }
+.about-photo-frame { position: relative; z-index: 1; padding: 11px; border: 1px solid var(--line); border-radius: 28px; background: var(--cream); box-shadow: var(--shadow); }
+.about-photo img { width: 100%; height: auto; aspect-ratio: auto; object-fit: contain; object-position: center; border-radius: 20px; }
+.about-intro-copy h2 { font-size: clamp(2.55rem, 4.4vw, 3.9rem); line-height: 1.08; letter-spacing: -.035em; }
+.about-intro-copy p { margin-top: 16px; color: var(--muted); font-size: .95rem; }
+.about-meta-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 25px; }
+.about-meta { padding: 18px; border: 1px solid var(--line); border-radius: 16px; background: var(--cream-soft); }
+.about-meta strong { display: block; color: var(--terracotta-deep); font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; }
+.about-meta span { display: block; margin-top: 6px; color: var(--olive-deep); font-size: .9rem; font-weight: 700; }
+
+.about-quote { padding: 92px 20px; background: var(--cream); text-align: center; }
+.about-quote-inner { width: min(860px, 100%); margin-inline: auto; }
+.about-quote h2 { font-size: clamp(2.45rem, 4.3vw, 4rem); line-height: 1.05; }
+.about-quote p { max-width: 690px; margin: 18px auto 0; color: var(--muted); }
+
+.about-tcc { background: var(--white); }
+.tcc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 42px; }
+.tcc-card { padding: 30px; border-top: 3px solid var(--mustard); background: var(--cream-soft); border-radius: 0 20px 20px 20px; }
+.tcc-icon { width: 52px; height: 52px; object-fit: contain; }
+.tcc-card h3 { margin-top: 16px; font-size: 1.35rem; }
+.tcc-card p { margin-top: 8px; color: var(--muted); font-size: .9rem; }
+
+.about-process { padding: 96px 0; background: var(--cream); color: var(--ink); }
+.about-process .eyebrow { color: var(--olive-deep); }
+.about-process .section-heading h2 { color: var(--olive-deep); }
+.about-process .section-heading p { color: var(--muted); }
+.process-grid { display: grid; grid-template-columns: repeat(4, 1fr); margin-top: 46px; }
+.process-step { padding: 10px 26px; text-align: center; }
+.process-number { width: 56px; height: 56px; display: grid; place-items: center; margin-inline: auto; border: 1px solid var(--line); border-radius: 50%; color: var(--olive-deep); font-size: .75rem; font-weight: 800; }
+.process-step h3 { margin-top: 18px; color: var(--olive-deep); font-size: 1.3rem; }
+.process-step p { max-width: 225px; margin: 8px auto 0; color: var(--muted); font-size: .9rem; }
+
+.about-experience { background: var(--cream-soft); }
+.experience-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 42px; }
+.experience-card { display: grid; grid-template-columns: 56px 1fr; gap: 16px; padding: 24px; border: 1px solid var(--line); border-radius: 18px; background: var(--white); }
+.experience-icon { width: 48px; height: 48px; display: grid; place-items: center; border-radius: 50%; background: var(--mustard-soft); color: var(--olive-deep); font-size: .75rem; font-weight: 800; }
+.experience-card h3 { font-size: 1.15rem; }
+.experience-card p { margin-top: 7px; color: var(--muted); font-size: .9rem; }
+
+.about-cta { padding: 84px 20px; background: var(--olive-deep); text-align: center; color: var(--white); }
+.about-cta-content { width: min(790px, 100%); margin-inline: auto; }
+.about-cta .eyebrow { color: var(--cream); }
+.about-cta h2 { color: var(--cream); font-size: clamp(2.35rem, 4.2vw, 3.7rem); line-height: 1.06; }
+.about-cta p { margin-top: 13px; color: rgba(244,237,226,.82); }
+.about-cta .button-primary { margin-top: 25px; background: var(--cream); color: var(--olive-deep); }
+
+@media (max-width: 900px) {
+    .about-intro-grid { grid-template-columns: 1fr; gap: 42px; }
+    .about-photo { max-width: 520px; }
+    .tcc-grid { grid-template-columns: 1fr; }
+    .process-grid { grid-template-columns: repeat(2, 1fr); row-gap: 28px; }
+}
+@media (max-width: 640px) {
+    .about-meta-grid, .experience-grid { grid-template-columns: 1fr; }
+    .process-grid { grid-template-columns: 1fr; }
+    .process-step { padding-inline: 8px; }
+}
+
+.about-photo { width: 100%; max-width: 460px; margin-inline: auto; }
